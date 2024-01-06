@@ -7,7 +7,6 @@ import livereload from 'rollup-plugin-livereload';
 import css from 'rollup-plugin-css-only';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
-import polyfillNode from 'rollup-plugin-polyfill-node';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -67,8 +66,6 @@ export default {
 			sourceMap: !production,
 			inlineSources: !production
 		}),
-
-		polyfillNode(),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
