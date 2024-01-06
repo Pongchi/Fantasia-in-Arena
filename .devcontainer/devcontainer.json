@@ -1,6 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-    "ghcr.io/devcontainers-contrib/features/vue-cli:3": {}
+    "ghcr.io/devcontainers-contrib/features/vue-cli:2.0.15": {}
   }
 }
